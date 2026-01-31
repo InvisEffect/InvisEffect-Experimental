@@ -185,8 +185,8 @@ document.addEventListener('DOMContentLoaded', () => {
             ctx.beginPath();
             ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
             ctx.fillStyle = mouseDist < mouse.radius * mouse.radius
-                ? 'rgba(209,124,255,0.9)'
-                : 'rgba(159,75,255,0.3)';
+                ? 'rgba(41, 127, 240, 0.9)'
+                : 'rgba(41, 127, 240, 0.3)';
             ctx.fill();
 
             let connections = 0;
@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const dist = dx2 * dx2 + dy2 * dy2;
 
                 if (dist < MAX_LINK_DIST) {
-                    ctx.strokeStyle = `rgba(159,75,255,${(1 - dist / MAX_LINK_DIST) * 0.15})`;
+                    ctx.strokeStyle = `rgba(41, 127, 240, ${(1 - dist / MAX_LINK_DIST) * 0.15})`;
                     ctx.lineWidth = 0.5;
                     ctx.beginPath();
                     ctx.moveTo(p.x, p.y);
