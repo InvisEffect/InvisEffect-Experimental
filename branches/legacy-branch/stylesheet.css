@@ -90,11 +90,13 @@ body {
 
 /* --- Global Components --- */
 .glowing {
+  background: rgba(0, 0, 0, 0.3);
   outline: 1px solid var(--secondary-blue);
   outline-offset: 4px;
   border-radius: 8px;
   padding: 10px 20px;
   animation: pulse-glow 3s infinite alternate ease-in-out;
+  backdrop-filter: blur(2px);
 }
 
 button {
@@ -158,10 +160,23 @@ button:hover {
   padding-top: 20px;
 }
 
+.navbar {
+  position: fixed;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: auto;
+  z-index: 1000;
+}
+
 .navbar button {
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(0, 0, 0, 0.3);
   width: 72px;
   height: 100%;
+  gap: 4px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -169,6 +184,7 @@ button:hover {
   border: none;
   cursor: pointer;
   color: white;
+  backdrop-filter: blur(2px);
 
   border-radius: 18px;
 
