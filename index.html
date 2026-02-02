@@ -191,10 +191,10 @@
     <main class="main-content">
         <header class="top-nav">
             <div class="tab-container" id="tabContainer"></div>
-            <div class="search-wrapper">
+            <div class="text-wrapper">
                 <i class="fa-solid fa-rotate-right" onclick="refreshCurrentTab()"
                     style="cursor: pointer; color: var(--text-dim);"></i>
-                <input type="text" id="urlInput" class="search-bar" placeholder="Search or enter URL...">
+                <input type="text" id="urlInput" class="text-bar" placeholder="Search or enter URL...">
             </div>
         </header>
         <section class="viewport" id="viewportContainer">
@@ -577,8 +577,8 @@
             const tab = tabs.find(t => t.id === activeTabId);
             if (!tab) return;
 
-            if (value.startsWith('mtcentral://')) {
-                value = value.replace('mtcentral://', '') + '.html';
+            if (value.startsWith('inviseffect://')) {
+                value = value.replace('inviseffect://', '') + '.html';
                 tab.title = value.replace('.html', '');
             } else if (!value.startsWith('http')) {
                 value = value.includes('.')

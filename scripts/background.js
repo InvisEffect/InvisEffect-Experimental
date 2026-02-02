@@ -1,3 +1,12 @@
+window.addEventListener('keydown', (e) => {
+    const savedKey = localStorage.getItem('panic-key');
+    const redirectUrl = localStorage.getItem('panic-url') || 'https://classroom.google.com';
+
+    if (e.key === savedKey) {
+        window.location.href = redirectUrl;
+    }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     const canvas = document.getElementById('bg-canvas');
     if (!canvas) return;
