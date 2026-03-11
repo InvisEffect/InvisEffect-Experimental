@@ -74,8 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
             ctx.beginPath();
             ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
             ctx.fillStyle = isNearMouse 
-                ? 'rgba(41, 127, 240, 0.85)' 
-                : 'rgba(41, 127, 240, 0.35)';
+                ? 'rgba(41, 227, 240, 0.85)' 
+                : 'rgba(41, 227, 240, 0.35)';
             ctx.fill();
             
             // Draw connections

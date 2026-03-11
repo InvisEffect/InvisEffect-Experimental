@@ -1,14 +1,14 @@
 /* ============================================
-   MTCentral: Modern Floating Squircle Design
+   InvisEffect: Futuristic Floating Squircle Design
    ============================================ */
 
 /* --- CSS Variables --- */
 :root {
     /* Brand Colors */
-    --primary-blue: #297ff0;
-    --secondary-blue: #1e68d8;
-    --tertiary-blue: #1d5dd4;
-    --accent-glow: rgba(41, 127, 240, 0.4);
+    --primary-teal: #00f2ff;
+    --secondary-teal: #00ced1;
+    --tertiary-teal: #20b2aa;
+    --accent-glow: rgba(0, 242, 255, 0.4);
 
     /* Neutral Palette */
     --bg: #070709;
@@ -53,8 +53,8 @@ body {
     color: var(--text-main);
     background-color: #0f0f14;
     background-image:
-        radial-gradient(circle at 0% 0%, color-mix(in srgb, var(--primary-blue) 18%, transparent) 0%, transparent 50%),
-        radial-gradient(circle at 100% 100%, color-mix(in srgb, var(--tertiary-blue) 12%, transparent) 0%, transparent 50%),
+        radial-gradient(circle at 0% 0%, color-mix(in srgb, var(--primary-teal) 18%, transparent) 0%, transparent 50%),
+        radial-gradient(circle at 100% 100%, color-mix(in srgb, var(--tertiary-teal) 12%, transparent) 0%, transparent 50%),
         radial-gradient(circle at 50% 50%, rgba(13, 13, 18, 1) 0%, rgba(15, 15, 20, 1) 100%);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -160,7 +160,7 @@ body {
     width: 200px;
     padding: 20px 16px;
     align-items: stretch;
-    border-right-color: rgba(41, 127, 240, 0.4);
+    border-right-color: rgba(41, 210, 240, 0.4);
     box-shadow: 2px 0 40px rgba(0, 0, 0, 0.6),
         inset -1px 0 0 rgba(41, 127, 240, 0.25),
         0 0 60px rgba(41, 127, 240, 0.15);
@@ -218,7 +218,7 @@ body {
     width: 4px;
     height: 70%;
     border-radius: 0 4px 4px 0;
-    background: linear-gradient(180deg, var(--primary-blue), var(--secondary-blue));
+    background: linear-gradient(180deg, var(--primary-blue), var(--secondary-teal));
     transform: translateY(-50%) scaleY(0);
     transition: transform var(--duration-nav-item) var(--ease-smooth);
     box-shadow: 0 0 8px var(--accent-glow);
@@ -257,8 +257,8 @@ body {
 
 .nav-item.active {
     color: white !important;
-    background: linear-gradient(135deg, rgba(41, 127, 240, 0.25) 0%, rgba(41, 127, 240, 0.1) 100%);
-    border-color: rgba(41, 127, 240, 0.5);
+    background: linear-gradient(135deg, rgba(41, 210, 240, 0.25) 0%, rgba(41, 200, 240, 0.1) 100%);
+    border-color: rgba(41, 227, 240, 0.5);
     box-shadow: 0 0 20px rgba(41, 127, 240, 0.2);
 }
 
@@ -427,8 +427,8 @@ button:hover i {
 
 .top-tab.active {
     color: white;
-    background: linear-gradient(135deg, rgba(41, 127, 240, 0.15) 0%, rgba(41, 127, 240, 0.05) 100%);
-    border-color: rgba(41, 127, 240, 0.4);
+    background: linear-gradient(135deg, rgba(41, 217, 240, 0.15) 0%, rgba(41, 210, 240, 0.05) 100%);
+    border-color: rgba(41, 217, 240, 0.4);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     position: relative;
 }
@@ -563,7 +563,7 @@ button:hover i {
 .add-tab-btn:hover {
     background: linear-gradient(135deg,
             var(--primary-blue) 0%,
-            var(--secondary-blue) 100%);
+            var(--secondary-teal) 100%);
     border-color: var(--primary-blue);
     color: white;
     transform: scale(1.1) rotate(90deg);
@@ -585,7 +585,7 @@ button:hover i {
     background: #0a0a0f;
     background-image:
         radial-gradient(circle at 0% 0%, color-mix(in srgb, var(--primary-blue) 15%, transparent) 0%, transparent 50%),
-        radial-gradient(circle at 100% 100%, color-mix(in srgb, var(--tertiary-blue) 10%, transparent) 0%, transparent 50%);
+        radial-gradient(circle at 100% 100%, color-mix(in srgb, var(--tertiary-teal) 10%, transparent) 0%, transparent 50%);
 }
 
 .panel,
@@ -718,7 +718,7 @@ button:hover i {
 
 .disguise-option:has(input:checked) {
     border-color: var(--primary-blue);
-    background: rgba(77, 104, 255, 0.1);
+    background: rgba(77, 228, 255, 0.1);
 }
 
 .disguise-option input:checked~.disguise-circle {
@@ -892,7 +892,7 @@ iframe,
     aspect-ratio: 1 / 1;
     overflow: hidden;
     border-radius: var(--radius-md);
-    background: #0e0e11;
+    background: #0e1011;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1099,7 +1099,7 @@ iframe,
     margin-left: 3px;
     border-radius: 1px;
     vertical-align: text-bottom;
-    background: linear-gradient(180deg, var(--primary-blue), var(--secondary-blue));
+    background: linear-gradient(180deg, var(--primary-blue), var(--secondary-teal));
     box-shadow: 0 0 8px var(--accent-glow);
     animation: cursorBlink 1s step-end infinite;
 }
@@ -1397,7 +1397,7 @@ sidebar .nav-item:last-of-type {
     min-width: 46px;
     margin: 0 auto 16px auto;
     border-radius: 0;
-    background: linear-gradient(135deg, var(--primary-blue), var(--tertiary-blue));
+    background: linear-gradient(135deg, var(--primary-blue), var(--tertiary-teal));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1454,7 +1454,7 @@ sidebar .nav-item:last-of-type {
     width: 4px;
     height: 70%;
     border-radius: 0 4px 4px 0;
-    background: linear-gradient(180deg, var(--primary-blue), var(--secondary-blue));
+    background: linear-gradient(180deg, var(--primary-blue), var(--secondary-teal));
     transform: translateY(-50%) scaleY(0);
     transition: transform var(--duration-nav-item) var(--ease-smooth);
     box-shadow: 0 0 8px var(--accent-glow);
@@ -1711,7 +1711,7 @@ sidebar .nav-item:last-of-type {
     width: 36px;
     height: 36px;
     border-radius: var(--radius-lg);
-    background: linear-gradient(135deg, var(--primary-blue), var(--tertiary-blue));
+    background: linear-gradient(135deg, var(--primary-blue), var(--tertiary-teal));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1774,7 +1774,7 @@ sidebar .nav-item:last-of-type {
 }
 
 .badge-site {
-    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-teal));
     color: white;
     box-shadow: 0 0 12px var(--accent-glow);
 }
@@ -2017,13 +2017,13 @@ sidebar .nav-item:last-of-type {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-teal));
     border-color: var(--primary-blue);
     color: white;
 }
 
 .btn-primary:hover {
-    background: linear-gradient(135deg, var(--secondary-blue), var(--primary-blue));
+    background: linear-gradient(135deg, var(--secondary-teal), var(--primary-blue));
     transform: translateY(-1px);
 }
 
@@ -2054,7 +2054,7 @@ sidebar .nav-item:last-of-type {
     width: 32px;
     height: 32px;
     border-radius: var(--radius-sm);
-    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-teal));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2257,7 +2257,7 @@ sidebar .nav-item:last-of-type {
     width: 32px;
     height: 32px;
     border-radius: var(--radius-sm);
-    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-teal));
     display: flex;
     align-items: center;
     justify-content: center;
