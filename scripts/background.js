@@ -25,10 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     window.addEventListener('resize', () => {
-    canvas.width = window.innerWidth
-    canvas.height = window.innerHeight
+        canvas.width = window.innerWidth
+        canvas.height = window.innerHeight
 
-    const newColumns = Math.floor(canvas.width / fontSize);
+        const newColumns = Math.floor(canvas.width / fontSize);
         if (newColumns > drops.length) {
             for (let i = drops.length; i < newColumns; i++) {
                 drops[i] = Math.floor(Math.random() * -100);
