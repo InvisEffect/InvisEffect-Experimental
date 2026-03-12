@@ -42,7 +42,7 @@ class TypingEffect {
                 display: inline-block;
                 width: 2px;
                 height: 1em;
-                background: linear-gradient(180deg, #1e68d8, #297ff0);
+                background: linear-gradient(180deg, #1ed8b9, #29f0d5);
                 margin-left: 3px;
                 border-radius: 1px;
                 animation: cursorBlink 1s ease-in-out infinite;
